@@ -1,0 +1,54 @@
+{% extends 'travel/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+    <h1 class="where-header">Where should we go next?</h1>
+        <div class="container border rounded-3 shadow form-container">
+            <div class="form-group">
+                <form action="" method="POST">   
+                    {% csrf_token %}
+                    <div class="row">
+                        
+                        {% for i in form %}
+                        <div class="col-sm-4">
+                            {{ i.label }}:{{ i }}
+                            <div class="col">
+                        </div>
+                    </div>
+                    
+                    {% endfor %}
+                    <div class="col">
+                    <button class="btn text-nowrap align-self-start find-button" type="submit">Find next adventure!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>
+
+<div class="container">
+    <h3 class="places-header">Places we want to go:</h3>
+    <hr class="my-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+            
+            {% for destination in destination_list %}
+            <div class="col city">
+                <div class="card shadow mx-auto" style="width: 16rem;">
+                    <img class="card-img-top" src="{{ destination.image.url }}" alt="Card image" style="height: 12rem; width: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ destination }}, {{ destination.country }}</h5>
+                        <div class="container destination-container">
+                            <div class="card-text"><i class="bi bi-tag"></i> {{ destination.adventure|capfirst }}</div>
+                            <div class="card-text"><i class="bi bi-airplane-engines"></i> {{ destination.flight|capfirst }}</div>
+                            <div class="card-text"><i class="bi bi-sun"></i> {{ destination.climate|capfirst }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+</div>
+{% include 'travel/checked_off.html' %}
+{% endblock %}
+ 

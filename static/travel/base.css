@@ -1,0 +1,127 @@
+body {
+    color: #545E6C;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ---- Navigation Bar ---- */
+.navbar {
+    padding-bottom: 2%;
+    background-color: #EAEAEA;
+    padding-top: 2%;
+    padding-left: .5%;
+}
+
+a,
+.nav-item a {
+    text-decoration: none;
+    color: #545E6C;
+}
+
+.nav-item a {
+    border: 2px solid #545E6C;
+}
+
+a:hover {
+    color: #C1A3A3;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+    color: #C1A3A3;
+    border: 2px solid #C1A3A3;
+}
+
+a:focus,
+.nav-item a:focus {
+    color: #FFD66B; 
+}
+
+/* ---- Where to go form ---- */
+.where-header,
+.places-header {
+    font-size: 28px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.find-button {
+    background-color: #EAEAEA;
+    color: #73777B;
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 0 4px 8px 0 rgba(65, 63, 66, 0.1), 0 6px 20px 0 rgba(65, 63, 66, 0.1);
+    border: 2px solid #ced4da;
+}
+
+.form-container {
+    padding: 2%;
+}
+
+#id_adventure,
+#id_climate,
+#id_flight {
+    box-shadow: 0 4px 8px 0 rgba(65, 63, 66, 0.1), 0 6px 20px 0 rgba(65, 63, 66, 0.1);
+    margin-top: 1.5%;
+}
+
+/* ---- Destination cards ---- */
+.city {
+    margin-bottom: 3%;
+}
+
+.card-title {
+    margin-bottom: 8%;
+}
+
+.card-text {
+    margin: none;
+    border-radius: 25px;
+    background: #EAEAEA;
+    margin-right: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: inline-block;
+    color: #73777B;
+}
+
+.card-text:nth-child(3) {
+    margin-top: 4%;
+}
+
+.destination-container {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* ---- checked_off.html - Checked Off Cards ---- */
+.been-header {
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+/* ---- add_destination.html - Add Destination Form ---- */
+.add-header {
+    font-size: 28px;
+    padding-top: 2%;
+}
+
+.add-container {
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+/* ---- next_destination.html - Next Destination Card ---- */
+.next-header {
+    font-size: 28px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
