@@ -7,6 +7,10 @@ Built with:
 * [Bootstrap](https://getbootstrap.com/ "Bootstrap")
 * [PythonAnywhere](https://pythonanywhere.com/ "PythonAnywhere")
 
+## 🎥 Video Preview
+
+https://user-images.githubusercontent.com/101557392/200541763-5a5fe60d-e434-4a15-b41f-ef13a19becae.mp4
+
 ## 👩‍🔧 Getting Started 
 
 These instructions will provide you a copy of the project that you can run locally. Visit [PythonAnywhere](https://pythonanywhere.com/ "PythonAnywhere") to set up a free account if you would like to host.
