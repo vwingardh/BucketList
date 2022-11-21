@@ -55,7 +55,7 @@ Otherwise, create a PostgreSQL database using pgAdmin and configure NAME and PAS
 
 **Step 8:** Delete existing migrations and migrate to new database.
 ```python
-pythonpython manage.py makemigrations
+python manage.py makemigrations
 
 python manage.py migrate
 ```
